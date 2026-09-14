@@ -17,10 +17,9 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     try {
       const saved = localStorage.getItem('thermo_theme');
       if (saved === 'light' || saved === 'dark') return saved;
-      // Default strictly to dark mode
-      return 'dark';
+      return 'light';
     } catch {
-      return 'dark';
+      return 'light';
     }
   });
 

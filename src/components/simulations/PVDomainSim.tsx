@@ -10,7 +10,7 @@ export const PVDomainSim: React.FC = () => {
   const { isDark } = useTheme();
   const [processType, setProcessType] = useState<ProcessType>('isothermal');
   const [progress, setProgress] = useState<number>(0.5); // 0 (state 1) to 1 (state 2)
-  const [isPlaying, setIsPlaying] = useState<boolean>(true);
+  const [isPlaying, setIsPlaying] = useState<boolean>(false);
   const [direction, setDirection] = useState<'expansion' | 'compression'>('expansion');
   const [polytropicIndex, setPolytropicIndex] = useState<number>(1.25);
   const [gammaVal, setGammaVal] = useState<number>(1.4); // Air = 1.4
